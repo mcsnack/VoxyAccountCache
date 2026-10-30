@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "voxy_account_cache",
+  "version": "${version}",
+  "name": "Voxy Account Cache",
+  "description": "Separates Voxy's local RocksDB cache by Minecraft account.",
+  "authors": ["mal0oCAM"],
+  "license": "MIT",
+  "environment": "client",
+  "mixins": [
+    {
+      "config": "voxy_account_cache.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "voxy": "*"
+  }
+}
