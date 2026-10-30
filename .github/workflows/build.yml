@@ -15,7 +15,7 @@ jobs:
           java-version: '25'
       - uses: gradle/actions/setup-gradle@v6
         with:
-          gradle-version: '9.8.2'
+          gradle-version: '9.6.0'
       - name: Build mod
         run: gradle build
       - uses: actions/upload-artifact@v7
